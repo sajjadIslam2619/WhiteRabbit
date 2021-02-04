@@ -3,6 +3,7 @@ def is_hotel_booking_possible(arrival, departure, total_room):
     event = [(a,0) for a in arrival] + [(d,1) for d in departure]
     event.sort()
     print(event)
+    
     guest=0
     for i in range(0, len(event)):
         if guest > total_room: return False
